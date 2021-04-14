@@ -1,0 +1,50 @@
+.btn {
+    font-size: 18px;
+    height: 50px;
+    width: 100px;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-left: 10px;
+    border: none; 
+    outline: none;
+    margin: 10px;
+}
+
+.startstop-btn-gre {
+    background-color: rgba(120, 245, 10, 0.714);
+    color: aliceblue;
+}
+
+.startstop-btn-gre:hover {
+    background-color: rgba(120, 245, 10, 0.255);
+    color:  aliceblue;
+} 
+.startstop-btn-red {
+    background-color: rgba(245, 10, 45, 0.906);
+    color: aliceblue;
+}
+.startstop-btn-red:hover {
+    background-color:  rgba(249, 0, 37, 0.495);
+    color: aliceblue;
+}
+.wait-btn-yell {
+    background-color: rgba(245, 237, 10, 0.906);
+    color: aliceblue;
+}
+.wait-btn-yell:hover {
+    background-color:  rgba(245, 237, 10, 0.502);
+    color: aliceblue;
+}
+.reset-btn-blue {
+    background-color: rgba(0, 0, 252, 0.975);
+    color: aliceblue;
+}
+.reset-btn-blue:hover {
+    background-color:   rgba(0, 0, 252, 0.461);
+    color: aliceblue;
+}
+div span {
+    color: white;
+    margin: 10px;
+}
