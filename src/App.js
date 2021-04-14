@@ -7,6 +7,7 @@ function App() {
   const [time, setTime] = React.useState(0);
   const [timerOn, setTimerOn] = React.useState(false);
   const [status, setStatus] = React.useState(0);
+  let wait1 = true;
 
   React.useEffect(() => {
     let interval = null;
@@ -32,8 +33,15 @@ function App() {
     setTime(0);
   };
   const wait = () => {
-    setTimerOn(false);
-    setStatus(2);
+    if (wait1) {
+      wait1 = false;
+      setTimeout(() => {
+        wait1 = true;
+      }, 300);
+    } else {    
+      setTimerOn(false);
+      setStatus(2);
+    }
   };
   const reset = () => {
     setTimerOn(false);
@@ -61,7 +69,6 @@ function App() {
             wait = {wait} 
             reset={reset} 
           />
-        
       </header>
     </div>
   );
